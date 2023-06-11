@@ -24,6 +24,7 @@
     font-size: 16px;
     line-height: 20px;
     color: #ffffff;
+    cursor: pointer;
     img {
       margin-right: 8px;
     }
@@ -53,7 +54,7 @@
     .loupe {
       position: absolute;
       cursor: pointer;
-      top: 21%;
+      top: 110px;
       right: 53%;
     }
   }
@@ -84,6 +85,13 @@
     .circle {
       position: relative;
       cursor: pointer;
+      transition: all 0.2s;
+      &:hover {
+        background: #e74e13;
+        img {
+          filter: grayscale(100%);
+        }
+      }
       .count {
         color: #fff;
         display: flex;
@@ -113,6 +121,44 @@
       align-items: center;
       text-align: right;
       font-variant: all-small-caps;
+      color: #000000;
+    }
+  }
+}
+.categories {
+  margin-top: 32px;
+  gap: 30px;
+  .cat_wrapper {
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid #1e6140;
+    padding: 5px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    transition: all 0.2s;
+    &:hover {
+      background: #e74e13;
+      .title {
+        color: #fff;
+      }
+      img {
+        filter: grayscale(100%);
+      }
+    }
+    img {
+      width: 24px;
+      height: 24px;
+    }
+    .title {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 17px;
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
       color: #000000;
     }
   }

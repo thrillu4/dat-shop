@@ -1,0 +1,102 @@
+footer {
+  padding: 120px 0 20px 0;
+  .wrapper {
+    gap: 70px;
+    justify-content: center;
+    padding-bottom: 120px;
+    .item {
+      img {
+        max-width: 110px;
+        max-height: 50px;
+      }
+      .text {
+        margin-top: 15px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: rgba(0, 0, 0, 0.6);
+      }
+      h4 {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+      }
+      ul {
+        margin-top: 26px;
+        li {
+          cursor: pointer;
+          margin-bottom: 20px;
+          a {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            color: #000000;
+          }
+        }
+      }
+      .tel_wrapper {
+        margin: 26px 0 21px 0;
+        .number {
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 17px;
+          text-decoration-line: underline;
+          color: #84be51;
+        }
+      }
+      .circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid #8c3213;
+      }
+    }
+    .mail {
+      display: flex;
+      align-items: center;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: #000000;
+    }
+    .contacts {
+      gap: 6px;
+    }
+  }
+  .divider {
+    max-width: 1100px;
+    margin: 0 auto;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  .year {
+    margin-top: 17px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #000000;
+    opacity: 0.5;
+  }
+  .arrow {
+    cursor: pointer;
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    background: #84c551;
+    border-radius: 30px;
+    height: 55px;
+    width: 145px;
+    transform: rotate(90deg);
+    transition: all 0.3s;
+    &:hover {
+      background: #1e6140;
+    }
+    img {
+      padding: 17px 25px;
+      transform: rotate(-90deg);
+    }
+  }
+}

@@ -82,6 +82,28 @@ const Header = () => {
           </div>
         </div>
       </div>
+      <div className="categories flex flex-center">
+        <div className="cat_wrapper flex">
+          <img src="./images/icons/seeds.png" alt="seeds" />
+          <div className="title">Насіння</div>
+        </div>
+        <div className="cat_wrapper flex">
+          <img src="./images/icons/sapling.png" alt="sapling" />
+          <div className="title">Засоби захисту рослин</div>
+        </div>
+        <div className="cat_wrapper flex">
+          <img src="./images/icons/group.png" alt="group" />
+          <div className="title">Добрива</div>
+        </div>
+        <div className="cat_wrapper flex">
+          <img src="./images/icons/frame.png" alt="frame" />
+          <div className="title">кормова група</div>
+        </div>
+        <div className="cat_wrapper flex">
+          <img src="./images/icons/farmer.png" alt="farmer" />
+          <div className="title">Агроному в поміч</div>
+        </div>
+      </div>
     </>
   );
 };
