@@ -1,0 +1,70 @@
+.partners {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 46px 0 110px 0;
+  div {
+    font-size: 18px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  .main {
+    font-weight: 400;
+  }
+  .dot {
+    margin: 0 8px;
+    width: 6px;
+    height: 6px;
+    background: #84c551;
+    border-radius: 50%;
+  }
+  .current {
+    font-weight: 700;
+  }
+  .title {
+    margin-top: 10px;
+    position: relative;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 55px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 23px;
+    &::before {
+      content: url(../../../../public/images/vector.png);
+      position: absolute;
+      top: 0;
+      left: 34%;
+    }
+    &::after {
+      content: url(../../../../public/images/vector.png);
+      position: absolute;
+      top: 3px;
+      right: 34%;
+      transform: rotate(75deg);
+    }
+  }
+  &_container {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px;
+    .item {
+      display: grid;
+      row-gap: 37px;
+      .item_top {
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+        img {
+          margin: 0 auto;
+        }
+      }
+    }
+    h3 {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 24px;
+      color: #000000;
+    }
+  }
+}

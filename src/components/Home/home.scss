@@ -1,8 +1,6 @@
 .home {
   padding-top: 90px;
   gap: 100px;
-  align-items: center;
-  justify-content: center;
   .wrapper {
     padding: 90px 0 355px 0;
     max-width: 100%;
@@ -36,39 +34,338 @@
         line-height: 22px;
         color: rgba(0, 0, 0, 0.5);
       }
-      button {
-        width: 220px;
-        margin-top: 23px;
-        padding: 10px 20px;
-        background: #e74e13;
-        border-radius: 90px;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 20px;
-        text-align: center;
-        color: #ffffff;
-      }
     }
   }
   .main_image {
     position: relative;
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 50%;
-    }
     &::before {
       content: url(../../../public/images/leaves.png);
       position: absolute;
-      bottom: 0;
-      left: -65px;
+      bottom: 58px;
+      left: -153px;
     }
     &::after {
       content: url(../../../public/images/leaf.png);
       position: absolute;
-      top: -33px;
+      top: -110px;
       right: 0;
+    }
+  }
+}
+.button {
+  width: 220px;
+  margin-top: 23px;
+  padding: 10px 20px;
+  background: #e74e13;
+  border: 1px solid #e74e13;
+  border-radius: 90px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  cursor: pointer;
+  color: #ffffff;
+  &:hover {
+    background: #fff;
+    color: #e74e13;
+    border: 1px solid #e74e13;
+  }
+}
+.about {
+  padding-top: 110px;
+  gap: 125px;
+  &_wrapper {
+    max-width: 540px;
+    h2 {
+      position: relative;
+      font-weight: 700;
+      font-size: 45px;
+      line-height: 55px;
+      padding-left: 48px;
+      margin-bottom: 25px;
+      &::before {
+        content: url(../../../public/images/vector.png);
+        position: absolute;
+        top: 0;
+        left: 0px;
+      }
+    }
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: rgba(0, 0, 0, 0.5);
+      margin-bottom: 15px;
+      .green {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: #1e6140;
+      }
+    }
+    .button {
+      margin-top: 20px;
+    }
+  }
+}
+.news {
+  max-width: 1410px;
+  margin: 0 auto;
+  padding-top: 120px;
+  position: relative;
+  h2 {
+    text-align: center;
+    position: relative;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 55px;
+    margin-bottom: 40px;
+    &::before {
+      content: url(../../../public/images/vector.png);
+      position: absolute;
+      top: 0;
+      left: 39%;
+    }
+    &::after {
+      content: url(../../../public/images/vector.png);
+      position: absolute;
+      top: 3px;
+      right: 39%;
+      transform: rotate(75deg);
+    }
+  }
+  .custom_swiper {
+    max-width: 1110px;
+    z-index: 1;
+    .item {
+      min-width: 255px;
+      min-height: 355px;
+      padding: 20px 30px;
+      .logo {
+        display: flex;
+        margin-left: auto;
+      }
+      .image {
+        display: block;
+        margin: 0 auto;
+        min-width: 100px;
+        min-height: 130px;
+      }
+      h5 {
+        margin-top: 32px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+      }
+      p {
+        margin-top: 3px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #1e6140;
+      }
+      &_wrap {
+        margin-top: 17px;
+        justify-content: space-between;
+        align-items: center;
+        .price {
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 22px;
+          color: #84be51;
+        }
+        div {
+          font-size: 14px;
+        }
+      }
+      &_cart {
+        cursor: pointer;
+        width: 47px;
+        height: 47px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 16px;
+          height: 16px;
+        }
+        &:hover {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 47px;
+          height: 47px;
+          border-radius: 50%;
+          border: 1px solid #8c3213;
+          background: papayawhip;
+        }
+      }
+    }
+  }
+  .swiper-button-next {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    bottom: 160px;
+    cursor: pointer;
+    transform: rotate(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1px solid #84be51;
+    transition: all 0.2s;
+    &:hover {
+      background: #84be51;
+      path {
+        fill: #fff;
+      }
+    }
+  }
+  .swiper-button-prev {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    bottom: 160px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1px solid #84be51;
+    transition: all 0.2s;
+    &:hover {
+      background: #84be51;
+      path {
+        fill: #fff;
+      }
+    }
+  }
+}
+.promotion {
+  margin-top: 100px;
+  width: 100%;
+  max-width: none;
+  background: #1e6140;
+  padding-bottom: 100px;
+  h2 {
+    color: #fff;
+    &:after {
+      right: 42%;
+    }
+    &::before {
+      left: 42%;
+    }
+  }
+  .item {
+    background-color: #fff;
+    border-radius: 20px;
+  }
+  .swiper-pagination {
+    margin-top: 40px;
+  }
+  .swiper-button-prev-promo {
+    left: 30px;
+    bottom: 355px;
+  }
+  .swiper-button-next-promo {
+    right: 30px;
+    bottom: 355px;
+  }
+  button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    text-align: center;
+    background: #e74e13;
+    border: 1px solid #e74e13;
+    border-radius: 90px;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    &:hover {
+      background: #fff;
+      color: #e74e13;
+      border: 1px solid #e74e13;
+    }
+  }
+}
+.partners-home {
+  padding: 0;
+  padding-top: 45px;
+
+  h2 {
+    &:after {
+      right: 38%;
+    }
+    &:before {
+      left: 38%;
+    }
+  }
+  .custom_swiper {
+    max-width: none;
+    .item {
+      display: flex;
+      align-items: center;
+      min-height: 126px;
+    }
+  }
+  .swiper-pagination {
+    position: static;
+  }
+  .swiper-button-next-partners,
+  .swiper-button-prev-partners {
+    bottom: 100px;
+    background: #84be51;
+    path {
+      fill: #fff;
+    }
+    &:hover {
+      background: #fff;
+      path {
+        fill: #84be51;
+      }
+    }
+  }
+  .swiper-pagination {
+    margin-top: 50px;
+  }
+}
+.seeds {
+  margin-top: 100px;
+  background: url(../../../public/images/happy-farmer.png) center center/cover
+    no-repeat;
+  &_wrapper {
+    max-width: 1110px;
+    padding: 110px 0 120px 0;
+    margin: 0 auto;
+    h2 {
+      font-weight: 700;
+      font-size: 45px;
+      line-height: 55px;
+      color: #ffffff;
+      margin-bottom: 17px;
+
+      position: relative;
+      &::before {
+        content: url(../../../public/images/vector.png);
+        padding-right: 17px;
+      }
+    }
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: #ffffff;
+      margin-bottom: 15px;
     }
   }
 }

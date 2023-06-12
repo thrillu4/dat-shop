@@ -1,0 +1,95 @@
+.delivery-page {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 46px 0 100px 0;
+  div {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+  }
+  .green-url {
+    color: #1e6140;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .main {
+    font-weight: 400;
+  }
+  .dot {
+    margin: 0 8px;
+    width: 6px;
+    height: 6px;
+    background: #84c551;
+    border-radius: 50%;
+  }
+  .current {
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  h2 {
+    margin-top: 10px;
+    position: relative;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 55px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 23px;
+    &::before {
+      content: url(../../../public/images/vector.png);
+      position: absolute;
+      top: 0;
+      left: 25%;
+    }
+    &::after {
+      content: url(../../../public/images/vector.png);
+      position: absolute;
+      top: 3px;
+      right: 25%;
+      transform: rotate(75deg);
+    }
+  }
+  .title {
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    color: #000000;
+  }
+  .green-text {
+    margin-top: 12px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #1e6140;
+  }
+  ul {
+    margin-top: 15px;
+    padding-left: 40px;
+    li {
+      margin-bottom: 12px;
+      list-style: outside;
+    }
+  }
+  .second {
+    margin-top: 30px;
+  }
+  .poshta_wrap {
+    margin-top: 20px;
+    gap: 30px;
+  }
+  .express {
+    margin-bottom: 18px;
+  }
+  .pickup {
+    margin-top: 70px;
+    &_container {
+      margin-top: 25px;
+      gap: 10px;
+    }
+    .text {
+      margin-bottom: 15px;
+    }
+  }
+}

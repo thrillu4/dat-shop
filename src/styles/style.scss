@@ -49,7 +49,7 @@ li {
 }
 
 .container {
-  width: 1920px;
+  max-width: 1920px;
   margin: 0 auto;
 }
 
@@ -60,4 +60,12 @@ li {
 .flex-center {
   align-items: center;
   justify-content: center;
+}
+
+.swiper-pagination {
+  position: static !important;
+}
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  background: #e74e13;
 }

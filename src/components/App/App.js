@@ -1,12 +1,14 @@
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
-import AppRoutes from "../Routes/Routes";
+import AppRoutes from "../Routes/AppRoutes";
 
 function App() {
   return (
     <div className="app">
       <Header />
-      <AppRoutes />
+      <div className="container">
+        <AppRoutes />
+      </div>
       <Footer />
     </div>
   );

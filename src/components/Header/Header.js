@@ -43,7 +43,6 @@ const Header = () => {
               name="search"
               placeholder="Пошук"
               autoComplete="off"
-              value=""
             />
             <button className="loupe">
               <img src="./images/icons/loupe.png" alt="loupe" />

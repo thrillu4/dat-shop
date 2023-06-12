@@ -63,7 +63,7 @@ const Footer = () => {
       </div>
       <div className="divider"></div>
       <div className="year">© 2023 DAT</div>
-      <div class="arrow">
+      <div className="arrow">
         <img src="./images/icons/arrow.png" alt="arrow" />
       </div>
     </footer>
