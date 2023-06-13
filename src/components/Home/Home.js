@@ -1,9 +1,14 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper";
+import { Link } from "react-router-dom";
+
 import "./home.scss";
 import "swiper/css";
 
 const Home = () => {
+  function goToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
   return (
     <>
       <section className="home flex flex-center">
@@ -15,7 +20,9 @@ const Home = () => {
               Основна сфера діяльності – дистрибуція насіння, засобів <br />{" "}
               захисту рослин, мінеральних макро - та мікродобрив
             </p>
-            <button className="button">Про компанію</button>
+            <Link onClick={goToTop} className="button" to="team">
+              Про компанію
+            </Link>
           </div>
         </div>
         <div className="main_image">
@@ -53,7 +60,9 @@ const Home = () => {
             України. Також ставимо собі завдання підвищувати обізнаність
             клієнтів щодо сучасних методів ведення рослинництва...
           </p>
-          <button className="button">Докладніше</button>
+          <Link onClick={goToTop} className="button" to="aboutus">
+            Докладніше
+          </Link>
         </div>
       </section>
       <section className="news">
@@ -442,7 +451,9 @@ const Home = () => {
             />
           </svg>
         </div>
-        <button>Дивитися усі товари</button>
+        <Link className="promotion_button" onClick={goToTop} to="catalog">
+          Дивитися усі товари
+        </Link>
       </section>
 
       <section className="partners partners-home news">

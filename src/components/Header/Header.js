@@ -29,7 +29,9 @@ const Header = () => {
         </ul>
         <div className="auth flex ">
           <img src="./images/icons/login.png" alt="login" />
-          <div>Вхід | Реестрація</div>
+          <div>
+            <Link to={ROUTES.REGISTRATION}>Вхід | Реестрація</Link>
+          </div>
         </div>
       </nav>
       <div className="promo flex">

@@ -87,16 +87,17 @@ footer {
     right: 20px;
     background: #84c551;
     border-radius: 30px;
+    border: 2px solid #84c551;
     height: 55px;
     width: 145px;
     transform: rotate(90deg);
+    padding: 19px 25px;
     transition: all 0.3s;
     &:hover {
-      background: #1e6140;
-    }
-    img {
-      padding: 17px 25px;
-      transform: rotate(-90deg);
+      background: #fff;
+      path {
+        fill: #84c551;
+      }
     }
   }
 }
