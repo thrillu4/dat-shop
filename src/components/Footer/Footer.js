@@ -27,7 +27,7 @@ const Footer = () => {
     <footer>
       <div className="wrapper flex ">
         <div className="item">
-          <img src="./images/main-logo.png" alt="logo" />
+          <img src="/images/main-logo.png" alt="logo" />
           <p className="text">
             Пропонуємо покупцям
             <br /> широкий вибір насіння
@@ -72,7 +72,7 @@ const Footer = () => {
           <h4>Контакти</h4>
           <div className="tel_wrapper contacts flex">
             <div className="circle">
-              <img src="./images/icons/call.png" alt="call" />
+              <img src="/images/icons/call.png" alt="call" />
             </div>
             <div>
               <div>+38 (067) 115 00 58</div>
@@ -83,7 +83,7 @@ const Footer = () => {
           </div>
           <div className="email_wrapper contacts flex">
             <div className="circle">
-              <img src="./images/icons/email.png" alt="email" />
+              <img src="/images/icons/email.png" alt="email" />
             </div>
             <a className="mail" href="mailto:DAT@gmail.com">
               DAT@gmail.com

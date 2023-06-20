@@ -61,6 +61,7 @@
       color: rgba(0, 0, 0, 0.5);
     }
     &_choose {
+      position: relative;
       width: 260px;
       align-items: center;
       justify-content: space-between;
@@ -73,6 +74,17 @@
         font-size: 14px;
         line-height: 17px;
         color: #484848;
+      }
+      .dropdown {
+        position: absolute;
+        width: 260px;
+        bottom: -124px;
+        left: 0px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 20px;
+        div {
+          padding: 12px 15px;
+        }
       }
       .svg_container {
         transform: rotate(90deg);

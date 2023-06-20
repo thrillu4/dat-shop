@@ -28,7 +28,7 @@ const Header = () => {
           <li className="line"></li>
         </ul>
         <div className="auth flex ">
-          <img src="./images/icons/login.png" alt="login" />
+          <img src="/images/icons/login.png" alt="login" />
           <div>
             <Link to={ROUTES.REGISTRATION}>Вхід | Реестрація</Link>
           </div>
@@ -36,7 +36,7 @@ const Header = () => {
       </nav>
       <div className="promo flex">
         <Link className="logo" to={ROUTES.HOME}>
-          <img src="./images/main-logo.png" alt="logo" />
+          <img src="/images/main-logo.png" alt="logo" />
         </Link>
         <div className="wrapper flex">
           <form className="search">
@@ -47,12 +47,12 @@ const Header = () => {
               autoComplete="off"
             />
             <button className="loupe">
-              <img src="./images/icons/loupe.png" alt="loupe" />
+              <img src="/images/icons/loupe.png" alt="loupe" />
             </button>
           </form>
           <div className="number flex">
             <div className="circle">
-              <img src="./images/icons/call.png" alt="call" />
+              <img src="/images/icons/call.png" alt="call" />
             </div>
             <div className="call">
               <div>+38 (067) 115 00 58</div>
@@ -62,19 +62,19 @@ const Header = () => {
           <div className="cart flex">
             <div className="circle">
               <Link to="">
-                <img src="./images/icons/heart.png" alt="heart" />
+                <img src="/images/icons/heart.png" alt="heart" />
                 <span className="count">1</span>
               </Link>
             </div>
             <div className="circle">
               <Link to="">
-                <img src="./images/icons/comparison.png" alt="comparison" />
+                <img src="/images/icons/comparison.png" alt="comparison" />
                 <span className="count">1</span>
               </Link>
             </div>
             <div className="circle">
               <Link to="">
-                <img src="./images/icons/cart.png" alt="cart" />
+                <img src="/images/icons/cart.png" alt="cart" />
                 <span className="count">1</span>
               </Link>
             </div>
@@ -85,23 +85,23 @@ const Header = () => {
       </div>
       <div className="categories flex flex-center">
         <div className="cat_wrapper flex">
-          <img src="./images/icons/seeds.png" alt="seeds" />
+          <img src="/images/icons/seeds.png" alt="seeds" />
           <div className="title">Насіння</div>
         </div>
         <div className="cat_wrapper flex">
-          <img src="./images/icons/sapling.png" alt="sapling" />
+          <img src="/images/icons/sapling.png" alt="sapling" />
           <div className="title">Засоби захисту рослин</div>
         </div>
         <div className="cat_wrapper flex">
-          <img src="./images/icons/group.png" alt="group" />
+          <img src="/images/icons/group.png" alt="group" />
           <div className="title">Добрива</div>
         </div>
         <div className="cat_wrapper flex">
-          <img src="./images/icons/frame.png" alt="frame" />
+          <img src="/images/icons/frame.png" alt="frame" />
           <div className="title">кормова група</div>
         </div>
         <div className="cat_wrapper flex">
-          <img src="./images/icons/farmer.png" alt="farmer" />
+          <img src="/images/icons/farmer.png" alt="farmer" />
           <div className="title">Агроному в поміч</div>
         </div>
       </div>

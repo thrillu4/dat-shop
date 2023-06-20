@@ -5,6 +5,7 @@ import AboutUs from "../AboutUs/AboutUs";
 import Partners from "../AboutUs/Partners/Partners";
 import Team from "../AboutUs/Team/Team";
 import Catalog from "../Catalog/Catalog";
+import SingleProduct from "../Catalog/SingleProduct/SingleProduct";
 import Contacts from "../Contacts/Contacts";
 import Delivery from "../Delivery/Delivery";
 import Home from "../Home/Home";
@@ -25,6 +26,7 @@ const AppRoutes = () => {
       <Route path={ROUTES.REGISTRATION} element={<Registration />} />
       <Route path={ROUTES.PROFILE} element={<Profile />} />
       <Route path={ROUTES.TEAM} element={<Team />} />
+      <Route path={ROUTES.PRODUCT} element={<SingleProduct />} />
     </Routes>
   );
 };

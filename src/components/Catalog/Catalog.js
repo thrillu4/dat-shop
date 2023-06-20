@@ -1,9 +1,27 @@
 import "./catalog.scss";
 import ProductFilter from "./ProductFilter";
 import ProductList from "./ProductList";
-import data from "../../data/productsData.json";
+import seeds from "../../data/productsData.json";
+import { useState } from "react";
 
 const Catalog = () => {
+  const [selectedCategory, setSelectedCategory] = useState("");
+  const [displayedProducts, setDisplayedProducts] = useState(5);
+  const [isOpen, setIsOpen] = useState(false);
+  const [filterOption, setFilterOption] = useState(null);
+
+  const handleCategoryChange = (category) => {
+    setSelectedCategory(category);
+  };
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const handleFilterChange = (option) => {
+    setFilterOption(option);
+  };
+
   return (
     <>
       <section className="catalog catalog-page">
@@ -14,9 +32,22 @@ const Catalog = () => {
         </div>
         <h2>Каталог продукції </h2>
         <div className="sort flex">
-          <div className="sort_count">Показано {data.seeds.length} товарів</div>
-          <div className="sort_choose flex">
-            <div>Сортувати за</div>
+          <div className="sort_count">Показано {displayedProducts} товарів</div>
+          <div onClick={toggleDropdown} className="sort_choose flex">
+            <div>
+              {filterOption === null
+                ? "Сортувати за"
+                : filterOption === "low"
+                ? "До 200 грн"
+                : "От 200 грн"}
+            </div>
+            {isOpen && (
+              <div className="dropdown">
+                <div onClick={() => handleFilterChange(null)}>Всі товари</div>
+                <div onClick={() => handleFilterChange("low")}>До 200 грн</div>
+                <div onClick={() => handleFilterChange("high")}>От 200 грн</div>
+              </div>
+            )}
             <div className="svg_container">
               <svg
                 width="12"
@@ -34,8 +65,18 @@ const Catalog = () => {
           </div>
         </div>
         <div className="catalog_wrap flex">
-          <ProductFilter />
-          <ProductList />
+          <ProductFilter
+            seeds={seeds}
+            selectedCategory={selectedCategory}
+            onCategoryChange={handleCategoryChange}
+          />
+          <ProductList
+            seeds={seeds}
+            selectedCategory={selectedCategory}
+            displayedProducts={displayedProducts}
+            setDisplayedProducts={setDisplayedProducts}
+            filterOption={filterOption}
+          />
         </div>
       </section>
       <div className="catalog_description">

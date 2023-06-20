@@ -1,19 +1,38 @@
-import seeds from "../../data/productsData.json";
+const ProductFilter = ({ seeds, selectedCategory, onCategoryChange }) => {
+  const categories = Array.from(
+    new Set(seeds.seeds.map((product) => product.category))
+  );
+  const manufacturer = Array.from(
+    new Set(seeds.seeds.map((product) => product.manufacturer))
+  );
 
-const ProductFilter = () => {
+  const handleCategoryChange = (event) => {
+    const category = event.target.value;
+    const isChecked = event.target.checked;
+
+    if (isChecked) {
+      onCategoryChange(category);
+    } else {
+      onCategoryChange("");
+    }
+  };
+
   return (
     <div className="filter">
       <div className="filter_title">Фільтр</div>
       <div className="filter_filter">
         <div className="subtitle">Виробник</div>
         <ul className="manufacturer-list list">
-          {seeds.seeds.map(({ manufacturer }, i) => {
+          {manufacturer.map((manufacturer, i) => {
             return (
               <li className="flex" key={i}>
                 <input
                   type="checkbox"
                   className="checkbox-list"
                   name={manufacturer}
+                  value={manufacturer}
+                  onChange={handleCategoryChange}
+                  checked={selectedCategory === manufacturer}
                 />
                 {manufacturer}
               </li>
@@ -22,13 +41,16 @@ const ProductFilter = () => {
         </ul>
         <div className="subtitle">Культура</div>
         <ul className="category-list list">
-          {seeds.seeds.map(({ category }, i) => {
+          {categories.map((category, i) => {
             return (
               <li key={i}>
                 <input
                   type="checkbox"
                   className="checkbox-list"
                   name={category}
+                  value={category}
+                  checked={selectedCategory === category}
+                  onChange={handleCategoryChange}
                 />
                 {category}
               </li>
