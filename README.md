@@ -1,5 +1,7 @@
 ### React JS DAT SHOP
 
+Link for deployed project [here](https://dat-shop.netlify.app/)
+
 ## Table Of Contents
 
 - [About the Project](#about-the-project)
