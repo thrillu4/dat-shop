@@ -14,6 +14,7 @@ const ProductList = ({
 
   const handleProductClick = (productId) => {
     navigate(`/product/${productId}`);
+    window.scrollTo({ top: 0 });
   };
 
   const filteredProducts = selectedCategory

@@ -41,7 +41,7 @@ const Header = () => {
         <div className="wrapper flex">
           <form className="search">
             <input
-              type="search"
+              type="text"
               name="search"
               placeholder="Пошук"
               autoComplete="off"
